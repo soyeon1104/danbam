@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/danbam" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:background="#aaa"
+        >
+
+        <TextView
+            android:id="@+id/api"
+            android:layout_weight="10"
+            android:text="API"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="4"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:background="#4B4A4A"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bluetooth"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/bluetooth_icon"
+                android:background="@drawable/button"
+                android:drawablePadding="0dp"
+                android:minHeight="80dp"
+                android:minWidth="150dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:paddingTop="-5dp"
+                android:text="블루투스"
+                android:textSize="18dp"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/onoff"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/onoff"
+                android:drawablePadding="0dp"
+                android:minHeight="80dp"
+                android:minWidth="150dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:paddingTop="-5dp"
+                android:text="on"
+                android:textSize="20dp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
